@@ -1,0 +1,108 @@
+@import ingredients
+    
+body
+    font-family: 'DynaPuff', cursive
+
+.cups
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.cup
+    margin: 10px
+
+
+.coffee
+    width: 150px
+    height: 150px
+    margin: 10px auto
+    display: flex
+    flex-direction: column-reverse
+    background-image: url(../images/cup.svg)
+    mask-image: url(../images/cup.svg)
+    -webkit-mask-image: url(../images/cup.svg)
+    background-size: cover
+    mask-size: 100%
+    -webkit-mask-size: 100%
+    mask-repeat: no-repeat
+    -webkit-mask-repeat: no-repeat
+    mask-position: center
+    -webkit-mask-position: center
+    position: relative
+
+    &__title
+        text-align: center
+        margin: 0
+
+    &--espresso
+        background-image: url(../images/cup--espresso.svg)
+        mask-image: url(../images/cup--espresso.svg)
+        -webkit-mask-image: url(../images/cup--espresso.svg)
+
+        .coffee__ingredients
+            width: 98%
+            height: 57%
+            bottom: 11.5%
+            left: 2%
+
+        .ingredient
+            padding-right: 23px
+
+    &--espressoMilk
+        background-image: url(../images/cup--espressoMilk.svg)
+        mask-image: url(../images/cup--espressoMilk.svg)
+        -webkit-mask-image: url(../images/cup--espressoMilk.svg)
+
+        .coffee__ingredients
+            width: 75%
+            height: 54%
+            bottom: 9%
+            left: 17%
+
+        .ingredient
+            padding-right: 23px
+
+    &--dessert
+        background-image: url(../images/cup--dessert.svg)
+        mask-image: url(../images/cup--dessert.svg)
+        -webkit-mask-image: url(../images/cup--dessert.svg)
+
+        .coffee__ingredients
+            width: 94%
+            height: 62%
+            bottom: 10%
+            left: 4%
+
+        .ingredient
+            padding-right: 19px
+    
+    &--alcoholic
+        background-image: url(../images/cup--alcoholic.svg)
+        mask-image: url(../images/cup--alcoholic.svg)
+        -webkit-mask-image: url(../images/cup--alcoholic.svg)
+
+        .coffee__ingredients
+            width: 57%
+            height: 64%
+            bottom: 0%
+            left: 21%
+
+        .ingredient
+            padding-right: 0
+
+
+.coffee__ingredients
+    display: flex
+    flex-direction: column-reverse
+    position: absolute
+    font-size: 6px
+    width: 56%
+    height: 65%
+    bottom: 0%
+    left: 22%
+
+.ingredient
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0
