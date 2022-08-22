@@ -57,9 +57,6 @@ body {
   margin: 10px auto;
   display: flex;
   flex-direction: column-reverse;
-  background-image: url(../images/cup.svg);
-  mask-image: url(../images/cup.svg);
-  -webkit-mask-image: url(../images/cup.svg);
   background-size: cover;
   mask-size: 100%;
   -webkit-mask-size: 100%;
@@ -67,14 +64,21 @@ body {
   -webkit-mask-repeat: no-repeat;
   mask-position: center;
   -webkit-mask-position: center;
-  position: relative; }
-  .coffee__title {
-    text-align: center;
-    margin: 0; }
+  position: relative;
+  background-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup.svg");
+  mask-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup.svg");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup.svg"); }
+  .coffee .coffee__ingredients {
+    width: 56%;
+    height: 65%;
+    bottom: 0;
+    left: 22%; }
+  .coffee .ingredient {
+    padding-right: 0; }
   .coffee--espresso {
-    background-image: url(../images/cup--espresso.svg);
-    mask-image: url(../images/cup--espresso.svg);
-    -webkit-mask-image: url(../images/cup--espresso.svg); }
+    background-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--espresso.svg");
+    mask-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--espresso.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--espresso.svg"); }
     .coffee--espresso .coffee__ingredients {
       width: 98%;
       height: 57%;
@@ -83,9 +87,9 @@ body {
     .coffee--espresso .ingredient {
       padding-right: 23px; }
   .coffee--espressoMilk {
-    background-image: url(../images/cup--espressoMilk.svg);
-    mask-image: url(../images/cup--espressoMilk.svg);
-    -webkit-mask-image: url(../images/cup--espressoMilk.svg); }
+    background-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--espressoMilk.svg");
+    mask-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--espressoMilk.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--espressoMilk.svg"); }
     .coffee--espressoMilk .coffee__ingredients {
       width: 75%;
       height: 54%;
@@ -94,9 +98,9 @@ body {
     .coffee--espressoMilk .ingredient {
       padding-right: 23px; }
   .coffee--dessert {
-    background-image: url(../images/cup--dessert.svg);
-    mask-image: url(../images/cup--dessert.svg);
-    -webkit-mask-image: url(../images/cup--dessert.svg); }
+    background-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--dessert.svg");
+    mask-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--dessert.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--dessert.svg"); }
     .coffee--dessert .coffee__ingredients {
       width: 94%;
       height: 62%;
@@ -105,9 +109,9 @@ body {
     .coffee--dessert .ingredient {
       padding-right: 19px; }
   .coffee--alcoholic {
-    background-image: url(../images/cup--alcoholic.svg);
-    mask-image: url(../images/cup--alcoholic.svg);
-    -webkit-mask-image: url(../images/cup--alcoholic.svg); }
+    background-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--alcoholic.svg");
+    mask-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--alcoholic.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/cup--alcoholic.svg"); }
     .coffee--alcoholic .coffee__ingredients {
       width: 57%;
       height: 64%;
@@ -115,16 +119,14 @@ body {
       left: 21%; }
     .coffee--alcoholic .ingredient {
       padding-right: 0; }
-
-.coffee__ingredients {
-  display: flex;
-  flex-direction: column-reverse;
-  position: absolute;
-  font-size: 6px;
-  width: 56%;
-  height: 65%;
-  bottom: 0%;
-  left: 22%; }
+  .coffee__title {
+    text-align: center;
+    margin: 0; }
+  .coffee__ingredients {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    font-size: 6px; }
 
 .ingredient {
   display: flex;
